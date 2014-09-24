@@ -22,7 +22,3 @@ WORKDIR /home/wix/wix
 ADD wix38-binaries.zip /home/wix/wix/wix38-binaries.zip
 RUN unzip /home/wix/wix/wix38-binaries.zip
 RUN rm /home/wix/wix/wix38-binaries.zip
-
-# Test WiX
-ADD example.wxs /home/wix/example.wxs
-RUN xvfb-run -a wine /home/wix/wix/candle.exe /home/wix/example.wxs
