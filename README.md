@@ -19,7 +19,7 @@ WiX is installed in the `/home/wix/wix` folder.
 For production use I would recommend creating your own subimage using a Dockerfile like this:
 
 ``` bash
-FROM monokrome/wine
+FROM justmoon/wix
 MAINTAINER You <you@example.com>
 
 ADD example.wxs /home/wix/example.wxs
